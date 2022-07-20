@@ -1,0 +1,7 @@
+li#posts(v-for='post in posts')
+    span.profile
+        img(v-bind:src='post.profilepic' v-on:click='authorinfo(posts, post)')
+    span.author {{ post.name }} - 
+    span.date {{ post.date }} 
+    span.reply {{ post.reply }}
+    p {{ post.message }}

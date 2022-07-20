@@ -1,0 +1,25 @@
+doctype html
+head
+    title Food Blog
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='css/styles.css')
+body
+    aside#leftside
+    aside#rightside
+    #container
+        include ../components/header.pug
+        main
+            aside#photos
+            img(src='images/chili.jpg' alt='White Chicken Chili' width='180')
+            h2
+            blogtitle
+            section#blogposts
+                ul
+                    include ../components/post.pug
+                    include ../components/post-modal.pug
+        include ../components/footer.pug
+    script(src='js/vue.js' defer)
